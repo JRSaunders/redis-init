@@ -1366,9 +1366,7 @@ sysctl:
   command:
     - sh
     - -c
-  args:
     - echo never > /host-sys/kernel/mm/transparent_hugepage/enabled
-    - sysctl -w net.core.somaxconn=10000
   ## @param sysctl.mountHostSys Mount the host `/sys` folder to `/host-sys`
   ##
   mountHostSys: true
