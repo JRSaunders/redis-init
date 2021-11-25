@@ -1353,6 +1353,10 @@ sysctl:
     repository: bitnami/bitnami-shell
     tag: 10-debian-10-r232
     pullPolicy: IfNotPresent
+    securityContext:
+      sysctls:
+        - name: net.core.somaxconn
+          value: "10000"
     ## Optionally specify an array of imagePullSecrets.
     ## Secrets must be manually created in the namespace.
     ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
@@ -1363,12 +1367,7 @@ sysctl:
     pullSecrets: []
   ## @param sysctl.command Override default init-sysctl container command (useful when using custom images)
   ##
-  command:
-    - /bin/sh
-    - -c
-    - install_packages procps
-    - sysctl -w net.core.somaxconn=10000
-    - echo never > /host-sys/kernel/mm/transparent_hugepage/enabled
+  command: ["sh", "-c", "echo never > /host-sys/kernel/mm/transparent_hugepage/enabled"]
   ## @param sysctl.mountHostSys Mount the host `/sys` folder to `/host-sys`
   ##
   mountHostSys: true
