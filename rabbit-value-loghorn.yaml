@@ -115,7 +115,7 @@ auth:
   ## @param auth.erlangCookie Erlang cookie to determine whether different nodes are allowed to communicate with each other
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  erlangCookie: ""
+  erlangCookie: "erlangCookiesecretcookie"
   ## @param auth.existingErlangSecret Existing secret with RabbitMQ Erlang cookie (must contain a value for `rabbitmq-erlang-cookie` key)
   ## e.g:
   ## existingErlangSecret: name-of-existing-secret
