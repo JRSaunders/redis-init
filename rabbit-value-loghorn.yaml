@@ -695,7 +695,7 @@ persistence:
   ## @param persistence.size PVC Storage Request for RabbitMQ data volume
   ## If you change this value, you might have to adjust `rabbitmq.diskFreeLimit` as well
   ##
-  size: 14Gi
+  size: 8Gi
 
   ## @param persistence.volumes Additional volumes without creating PVC
   ##  - name: volume_name
