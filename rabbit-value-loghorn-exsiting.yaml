@@ -110,7 +110,7 @@ auth:
   ## e.g:
   ## existingPasswordSecret: name-of-existing-secret
   ##
-  existingPasswordSecret: "rabbitmq-password"
+  existingPasswordSecret: "rabbitmq"
 
   ## @param auth.erlangCookie Erlang cookie to determine whether different nodes are allowed to communicate with each other
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
@@ -120,7 +120,7 @@ auth:
   ## e.g:
   ## existingErlangSecret: name-of-existing-secret
   ##
-  existingErlangSecret: "rabbitmq-erlang-cookie"
+  existingErlangSecret: "rabbitmq"
 
   ## Enable encryption to rabbitmq
   ## ref: https://www.rabbitmq.com/ssl.html
