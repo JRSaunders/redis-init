@@ -172,7 +172,7 @@ onlineSchedulers: ""
 memoryHighWatermark:
   ## @param memoryHighWatermark.enabled Enable configuring Memory high watermark on RabbitMQ
   ##
-  enabled: false
+  enabled: true
   ## @param memoryHighWatermark.type Memory high watermark type. Either `absolute` or `relative`
   ##
   type: "absolute"
