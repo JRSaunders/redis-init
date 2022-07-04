@@ -1159,13 +1159,7 @@ volumePermissions:
   ## @param volumePermissions.resources.requests Init container volume-permissions resource requests
   ##
   resources:
-    ## Example:
-    ## limits:
-    ##    cpu: 100m
-    ##    memory: 128Mi
-    limits: {}
-    ## Examples:
-    ## requests:
-    ##    cpu: 100m
-    ##    memory: 128Mi
-    requests: {}
+    limits:
+      requests:
+        cpu: 100m
+        memory: 128Mi
