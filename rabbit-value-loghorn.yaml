@@ -1160,7 +1160,6 @@ volumePermissions:
   ##
   resources:
     limits:
-      requests:
-        cpu: 100m
-        memory: '128MB'
+      cpu: 100m
+      memory: '128MB'
 
