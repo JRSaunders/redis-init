@@ -182,7 +182,7 @@ memoryHighWatermark:
   ## Note: the memory relative limit is applied to the resource.limits.memory to calculate the memory threshold
   ## You can also use an absolute value, e.g.: 256MB
   ##
-  value: "512MB"
+  value: 256MB
 
 ## @param plugins List of default plugins to enable (should only be altered to remove defaults; for additional plugins use `extraPlugins`)
 ##
@@ -1160,5 +1160,8 @@ volumePermissions:
   ##
   resources:
     limits:
-      cpu: 100m
-      memory: '128Mi'
+      cpu: 120m
+      memory: 256Mi
+    requests:
+      cpu: 120m
+      memory: 256Mi
